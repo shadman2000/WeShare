@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>weShare</title>
+        <link type="text/css" rel="stylesheet" href="css/index.css">
+        <link href="materialize/css/materialize.css" rel="stylesheet">
+        <link href="css/animate.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Tammudu" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    </head>
+    
+    <body>
+        
+        <nav class="green accent-1 scrolla" data-animate="fadeInDown" data-duration="2.0s" data-delay="0.1s">
+            <div class="nav-wrapper">
+              <a href="index.html" class="brand-logo center"><span class="navstyle">WeShare</span></a>
+              <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+              <ul class="right hide-on-med-and-down">
+                  <li><a href="#"><span class="navstyle"><i class="material-icons left">supervisor_account</i></span><span class="navstyle">Login</span></a></li>
+                  <li><a href="#"><span class="navstyle"><i class="material-icons left">add_circle</i></span><span class="navstyle">SignUp</span></a></li>
+              </ul>
+              <ul class="left hide-on-med-and-down">
+                  <li><a href="#"><span class="navstyle">About</span></a></li>
+                  <li><a href="#"><span class="navstyle">Contact</span></a></li>
+              </ul>
+              <ul class="side-nav" id="mobile-demo">
+                <li><a href="#">Sass</a></li>
+                <li><a href="#">Components</a></li>
+                <li><a href="#">Javascript</a></li>
+                <li><a href="#">Mobile</a></li>
+              </ul>
+            </div>
+        </nav>
+        
+        
+        <div id="section1">
+            <div class="container" style="text-align:center;position:relative; top:25vh; color:white; font-family: 'Roboto Slab', serif;">
+                <h4 style="margin:0px;" class="scrolla" data-animate="fadeIn" data-duration="3.0s" data-delay="0.1s">"There is always someone somewhere inneed of food"</h4><br>
+                <h6 style="margin:0px;" class="scrolla" data-animate="fadeIn" data-duration="3.0s" data-delay="0.1s">42 million people face hunger in the U.S. today — including nearly 13 million children and more than five million seniors. Hunger knows no boundaries — it touches every community in the U.S., including your own.</h6>
+                <p class="scrolla" data-animate="fadeIn" data-duration="3.0s" data-delay="0.1s"><cite>-Feeding America</cite></p>
+            </div>
+        </div>
+        <br>
+        <div id="section2">
+            <h5 class="container" style="text-align:center;position:relative; font-family: 'Roboto Slab', serif;">There are countless people you can help around you. Be the hero that your community needs.</h5>
+        </div>
+        <br>
+        <div id="googlemaps"></div>
+        
+        
+        
+        <script src="javascript/jquery-3.2.1.js"></script>
+        <script src="javascript/jquery.paroller.js"></script>
+        <script src="javascript/scrolla.jquery.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvBmACf2qWjA1ArXmw9L4LrCr5Dti9ewU&callback=initMap"></script>
+        <script src="javascript/index.js"></script>
+    </body>
+</html>

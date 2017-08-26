@@ -1,0 +1,28 @@
+body{
+    margin:0px;
+}
+
+.navstyle{
+    color:black;
+    font-family: 'Baloo Tammudu', cursive;
+}
+
+#section1{
+    position:relative;
+    height:80vh;
+    width:100vw;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/fw.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin:0px;
+    overflow: hidden;
+}
+
+#googlemaps{
+    height:50vh;
+    width:100vw;
+    background-color:grey;
+}
+
+
+
