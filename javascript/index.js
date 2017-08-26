@@ -1,5 +1,7 @@
 $(document).ready(function(){
-    $(".scrolla").scrolla();
+    $(".scrolla").scrolla({
+        mobile:true
+    });
     $("#section1").paroller();
 });
 
