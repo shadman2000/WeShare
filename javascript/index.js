@@ -6,22 +6,8 @@ $(document).ready(function(){
 });
 
 
-
-function getLocation(){
     
-    if(navigator.geolocation){
-        navigator.geolocation.getCurrentLocation(showPosition);
-    }
-    else{
-        alert("Your Browser does not support geolocation. Please update your browser or try a different one");
-    }
-};
 
-function showPosition(positions){
-    var lat = positions.coords.latitude;
-    var long = positions.coords.longitude;
-    console.log(lat,long);
-}
 
 
 function initMap(){
@@ -37,6 +23,19 @@ function initMap(){
             position: new google.maps.LatLng(usa[i][0],usa[i][1]),
             map: map
         });
+    };
+    
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+            var lat = position.coords.latitude;
+            var lng = position.coords.longitude;
+            map.seCenter(46.6190205,48.9108997);
+        });
     }
+                                    
+    else{
+        alert("Your Browser does not support geolocation or please allow your browser to get your current location.");
+    }
+
 };
 
